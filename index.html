@@ -6,46 +6,102 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Interactive card details form</title>
+  <title>Interactive Card Details Form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- CSS STYLESHEET -->
+
+<link rel="stylesheet" href="styles.css">
+
+  <!-- GOOGLE FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+  <header>
+  
+    <div class="cards">
+      <div class="card-front">
+        <img class="card-logo" src="./images/card-logo.svg" alt="card-logo">
+        <h1 class="card-number">0000 0000 0000 0000</h1>
 
-  000
+        <div class="name-expiration">
+        <p class="card-name">Jane Appleseed</p>
+        <p class="card-expiration-date">00/00</p>
+      </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+      </div>
+  
+      <div class="card-back">
+        <div class="cv-number">000</div>
+        
+      </div>
+    
+    
+    </div>
+  </header>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+ 
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+<!-- FORM INPUT -->
 
-  CVC
-  e.g. 123
+<section>
 
-  Confirm
+<h2>Cardholder Name</h2>
+<input type="text" class="cardholder-name" placeholder="e.g. Jane Appleseed">
+
+<h2>Card Number</h2>
+<input type="text" class="card-number-txt" placeholder="e.g. 1234 5678 9123 0000">
+
+<div class="expiration-cvc">
+<h2 class="exp-txt">Exp. Date (MM/YY)</h2>
+<h2 class="cvc-txt">CVC</h2>
+</div>
+
+<div class="expiration-cvc">
+<input type="text" class="exp-date-mm" placeholder="MM">
+<input type="text" class="exp-date-yy" placeholder="YY">
+
+<input type="text" class="cvc" placeholder="e.g. 123">
+</div>
+
+</section>
+
+
+  <button>Confirm</button>
 
   <!-- Completed state start -->
 
-  Thank you!
-  We've added your card details
-  Continue
+<div class="completed-state">
+  <img src="./images/icon-complete.svg" alt="complete-check">
+ <h1>Thank you!</h1>
+<p>We've added your card details</p>  
+  <button>Continue</button>
+
+</div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
+
+
+
+<!-- Javascript
+1. Fill out the form to enter the card information
+2. The 'card-front' class changes to the card information that is entered.
+3. Error shows when there is information that isn't written correctly.
+
+
+- Change elementbyclass to the new information when new information is stored.
+- Confirm button will go to the next class IF everything is written in, if not, an error over the specific box will show. If complete it will display the content for confirming the card details that were entered.   -->
+
+
+<!-- 
+change the following classes with information that is written in the form: 
+- Card Name = Cardholder Name
+- Card Number = Card Number
+- Card Expiration Date = Card Expiration Date
+- Card Logo = Card Logo
+- CV Number = CV Number -->

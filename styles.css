@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+button {
+    font-size: 18px;
+    width: 327px;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* ----------------------MOBILE---------------------- */
+
+/* Cards */
+
+.cards {
+    position: absolute;
+    background-image: url(./images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+    padding-top: 32px;
+
+}
+
+.card-front {
+    background-image: url(./images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 286px;
+    min-height: 157px;
+    position: absolute;
+    z-index: 1;
+    margin: 89px 73px 0 16px;
+    color: #fff;
+    padding-left: 19px;
+}
+
+.card-front img {
+    padding-top: 17.6px;
+    width: 54px;
+}
+
+.card-number {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.name-expiration {
+    display: flex;
+    padding-top: 17px;
+}
+
+.card-name, .card-expiration-date, .cv-number {
+    font-size: 9px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.card-expiration-date {
+    margin-left: 124px;
+}
+
+.card-back {
+    background-image: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 286px;
+    min-height: 157px;
+    z-index: 0;
+    margin: 0 16px 0 73px;
+}
+
+.cv-number {
+    text-align: right;
+    padding-right: 37px;
+    padding-top: 71px;
+}
+
+/* Input Information */
+
+section {
+    padding: 331px 24px 28px;
+}
+
+section h2 {
+    padding-bottom: 9px;
+    padding-top: 20px;
+}
+
+input {
+    height: 45px;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 11px 0 11px 16px; 
+}
+
+.cardholder-name, .card-number-txt {
+    width: 327px;
+}
+
+.expiration-cvc {
+    display: flex;
+}
+
+.cvc-txt {
+    padding-left: 23px;
+}
+
+.exp-date-mm, .exp-date-yy {
+    width: 72px;
+    margin-right: 10px;
+}
+
+.cvc {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Completed state start - Hidden to start */
+
+
+.completed-state {
+    text-align: center;
+    display: none;
+}
+
+.completed-state img {
+    padding-bottom: 35px;
+}
+
+.completed-state h1 {
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3.4px;
+    color: hsl(278, 68%, 11%);
+}
+
+.completed-state p {
+    padding-bottom: 48px;
+    color: #8F8694;
+}
+
+/* PICKUP WHERE YOU LEFT OFF */
+/* 
+- Edit elements so that they're responsive
+- Change elements to REM and more responsiveness */
