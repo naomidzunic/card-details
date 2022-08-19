@@ -111,7 +111,7 @@ button {
 /* Input Information */
 
 section {
-    /* padding: 18.38rem 1.5rem 1.75rem; */
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
 }
@@ -139,11 +139,16 @@ input {
 }
 
 .cvc-txt {
-    padding-left: 1.44rem;
+    padding-left: 1.4rem;
 }
 
 .exp-date-mm, .exp-date-yy {
-    width: 4.5rem;
+    width: 4.7rem;
+}
+
+input.cvc {
+    width: 10.25rem;
+
 }
 
 
