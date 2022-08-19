@@ -28,7 +28,7 @@ button {
     border: none;
     background-color: hsl(278, 68%, 11%);
     color: #fff;
-    margin: 0 auto;
+    margin: 1.75rem auto 0 auto;
     display: block;
 }
 
@@ -38,75 +38,82 @@ button {
 /* Cards */
 
 .cards-background {
-    position: absolute;
     background-image: url(./images/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 32vh;
     width: 100%;
-    padding-top: 2rem;
-
-}
-
-.card-front {
-    background-image: url(./images/bg-card-front.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 17.88rem;
-    min-height: 9.81rem;
-    position: absolute;
-    z-index: 1;
-    margin: 5.56rem 4.56rem 0 1rem;
-    color: #fff;
-    padding-left: 1.19rem;
-}
-
-.card-front img {
-    padding-top: 1.1rem;
-    width: 3.5rem;
-}
-
-.card-number {
-    font-size: 1.13rem;
-    padding-top: 1.25rem;
-}
-
-.name-expiration {
     display: flex;
-    padding-top: 1.06rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.card-name, .card-expiration-date, .cv-number {
-    font-size: 0.56rem;
-    letter-spacing: 1.3px;
-    text-transform: uppercase;
+.back, .cvc-zero {
+    position: absolute;
+}
+
+.back, .front {
+    width: 17.88rem;
+}
+
+.back {
+    transform: translate(10%, 0);
+   }
+
+.cvc-zero {
+    color: #fff;
+    font-size: 9px;
+    padding-bottom: 1.7px;
+    margin-left: 15.8rem;
+    letter-spacing: 1.29px;
+}
+
+.front-container {
+    z-index: 1;
+    margin-top: 11.4rem;
+    margin-right: 4rem;
+    position: relative;
+}
+
+.front-info {
+    position: absolute;
+    bottom: 5.6rem;
+    left: 1.25rem;
+    top: 18px;
+}
+.front-logo {
+    z-index: 1;
+    width: 54px;
+    padding-bottom: 1.875rem;
+}
+
+.front-number {
+    color: #fff;
+    font-size: 1.125rem;
+    letter-spacing: 2.2px;
+    padding-bottom: 1.06rem;
+}
+
+.name-date {
+    display: flex;
+    justify-content: space-between;
+}
+.name-date h1 {
+    font-size: 9px;
+    letter-spacing: 1.29px;
     color: #fff;
 }
 
-.card-expiration-date {
-    margin-left: 7.75rem;
-}
 
-.card-back {
-    background-image: url(./images/bg-card-back.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-width: 17.88rem;
-    min-height: 9.81rem;
-    z-index: 0;
-    margin: 0 1rem 0 4.56rem;
-}
 
-.cv-number {
-    text-align: right;
-    padding-right: 2.31rem;
-    padding-top: 4.44rem;
-}
+
 
 /* Input Information */
 
 section {
-    padding: 19.38rem 1.5rem 1.75rem;
+    /* padding: 18.38rem 1.5rem 1.75rem; */
+    display: flex;
+    justify-content: center;
 }
 
 section h2 {
@@ -119,6 +126,8 @@ input {
     border-radius: 8px;
     background-color: transparent;
     padding: 0.69rem 0 0.69rem 1rem; 
+    display: block;
+    margin: auto;
 }
 
 .cardholder-name, .card-number-txt {
@@ -135,20 +144,7 @@ input {
 
 .exp-date-mm, .exp-date-yy {
     width: 4.5rem;
-    margin-right: 0.63rem;
 }
-
-.cvc {
-    width: 100%;
-}
-
-
-
-
-
-
-
-
 
 
 /* Completed state start - Hidden to start */

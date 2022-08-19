@@ -21,36 +21,40 @@
 </head>
 <body>
 
-  <header>
-  
+
     <div class="cards-background">
+      <img class="back" src="./images/bg-card-back.png" alt=""></img>
+      <h1 class="cvc-zero">000</h1>
     
-      <div class="cards">
-        <div class="card-front">
-          <img class="card-logo" src="./images/card-logo.svg" alt="card-logo">
-          <h1 class="card-number">0000 0000 0000 0000</h1>
     
-          <div class="name-expiration">
-            <p class="card-name">Jane Appleseed</p>
-            <p class="card-expiration-date">00/00</p>
-          </div>
-    
-        </div>
-    
-        <div class="card-back">
-          <div class="cv-number">000</div>
-    
-        </div>
-    
+      <div class="front-container">
+        <img class="front" src="./images/bg-card-front.png" alt=""></img>
+      
+      <div class="front-info">
+        <img class="front-logo" src="./images/card-logo.svg" alt="card-logo">
+        <h1 class="front-number">0000 0000 0000 0000</h1>
+        
+        <div class="name-date">
+        <h1 class="card-name">Jane Appleseed</h1>
+        <h1 class="exp-date"><span class="month">00</span>/<span class="year">00</span></h1>
       </div>
+
+
+      </div>
+      </div>
+    
+    
     </div>
-  </header>
+
+
+    
 
  
 
 <!-- FORM INPUT -->
 
 <section>
+  <div class="section-container">
 
 <h2>Cardholder Name</h2>
 <input type="text" class="cardholder-name" placeholder="e.g. Jane Appleseed">
@@ -70,10 +74,12 @@
 <input type="text" class="cvc" placeholder="e.g. 123">
 </div>
 
+
+  <button>Confirm</button>
+</div>
 </section>
 
 
-  <button>Confirm</button>
 
   <!-- Completed state start -->
 

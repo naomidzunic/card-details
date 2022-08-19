@@ -55,4 +55,4 @@ I chose this project as I knew it would likely be a skill I would need to know i
 
 Building the form was simple (as I'm beginning to realize that I am relatively good at CSS). Using more Javascript is what I'm dipping my toes in. Little projects like this keep me motivated to continue learnning. 
 
-One challenge I had while creating this project was 
+One challenge I had while creating this project was the card images suprisingly. I started with adding them as background images in CSS but I couldn't figure out how to make them stationary while the screen size changed. Then that turned into an entire work around on adding images and aligning them, ensuring that all elements stayed centered. It took me a bit but I managed to do it (I'm sure this will bite me in the butt again later once I start adding the Javascript).
