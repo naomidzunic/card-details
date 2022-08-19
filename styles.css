@@ -33,6 +33,7 @@ button {
 }
 
 
+
 /* ----------------------MOBILE---------------------- */
 
 /* Cards */
@@ -124,10 +125,16 @@ section h2 {
 input {
     height: 2.81rem;
     border-radius: 8px;
-    background-color: transparent;
     padding: 0.69rem 0 0.69rem 1rem; 
     display: block;
     margin: auto;
+    background-color: transparent;
+    border: 1px solid #DFDEE0;
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: #C7C1CB;
 }
 
 .cardholder-name, .card-number-txt {
