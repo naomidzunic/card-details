@@ -97,12 +97,15 @@ button {
 
 .name-date {
     display: flex;
-    gap: 7rem;
 }
 .name-date h1 {
     font-size: 9px;
     letter-spacing: 1.29px;
     color: #fff;
+}
+
+.exp-date {
+    margin-left: 8.5rem;
 }
 
 
