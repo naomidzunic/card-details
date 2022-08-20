@@ -97,7 +97,7 @@ button {
 
 .name-date {
     display: flex;
-    justify-content: space-between;
+    gap: 7rem;
 }
 .name-date h1 {
     font-size: 9px;
@@ -137,7 +137,7 @@ input::placeholder {
     color: #C7C1CB;
 }
 
-.cardholder-name, .card-number-txt {
+.cardholder-name-input, .card-number-input {
     width: 20.44rem;
 }
 
@@ -146,11 +146,17 @@ input::placeholder {
 }
 
 .cvc-txt {
-    padding-left: 1.4rem;
+    padding-left: 1.7rem;
 }
 
-.exp-date-mm, .exp-date-yy {
-    width: 4.7rem;
+.exp-mm-input, .exp-yy-input {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+
+.cvc-input {
+    width: 10rem;
 }
 
 input.cvc {
