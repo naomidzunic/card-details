@@ -10,8 +10,6 @@ document.querySelector('.cardholder-name-input').oninput = () =>{
 
 // Credit Card Number
 
-
-
 document.querySelector('.card-number-input').oninput = () =>{
     document.querySelector('.front-number').innerText = document.querySelector('.card-number-input').value;
 }
@@ -20,25 +18,34 @@ var cardNumber = new Cleave('.card-number-input', {
     creditCard: true,
     delimiter: " ",
     onCreditCardTypeChanged: function (type) {
-        const cardBrand = document.getElementsByClassName('front-logo'),
-        visa = 'fab fa-cc-visa';
+        const cardLogo = document.getElementsByClassName('front-logo'),
+        visa = 'fa-brands fa-cc-visa';
 
 
         switch (type) {
             case "visa":
-                cardBrand.setAttribute("class", visa);
+                cardLogo.setAttribute("class", visa);
                 break;
         
             default: 
-            cardBrand.setAttribute("class", ' ');
+            cardLogo.setAttribute("class", ' ');
             break;
         }
     }
 });
 
+// Ensures no letters are added to the expiry date
+const cleaveDate = new Cleave(".card-expiry", {
+    date: true, 
+    datePattern: ['m', 'y']
+})
+
+// Ensures no letters are added to CVC
 
 
-
+const cleaveCVC = new Cleave(".card-cvc", {
+    datePattern: ['m', 'y']
+})
 
 
 // Expiration Month
