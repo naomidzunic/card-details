@@ -11,13 +11,31 @@ document.querySelector('.cardholder-name-input').oninput = () =>{
 // Credit Card Number
 
 
+
 document.querySelector('.card-number-input').oninput = () =>{
     document.querySelector('.front-number').innerText = document.querySelector('.card-number-input').value;
 }
 
-let cardNumber = document.getElementsByClassName("card-number-input").value;
-let numbers = cardNumber.match(/.{1,4}/g);
-console.log(numbers.join(' '));
+var cardNumber = new Cleave('.card-number-input', {
+    creditCard: true,
+    delimiter: " ",
+    onCreditCardTypeChanged: function (type) {
+        const cardBrand = document.getElementsByClassName('front-logo'),
+        visa = 'fab fa-cc-visa';
+
+
+        switch (type) {
+            case "visa":
+                cardBrand.setAttribute("class", visa);
+                break;
+        
+            default: 
+            cardBrand.setAttribute("class", ' ');
+            break;
+        }
+    }
+});
+
 
 
 
